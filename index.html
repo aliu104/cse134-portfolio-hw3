@@ -5,49 +5,79 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Annie Liu</title>
     <link rel="icon" href="assets/butterfly.png" type="image/png">
+    <link rel="stylesheet" href="styles/globals.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/home.css">
 </head>
 <body>
-    <header>
-        <!-- Table layout to place H1 and nav side by side, nav at the end of the screen -->
-        <table>
-            <tr>
-                <td>
-                    <h1>Annie Liu</h1>
-                </td>
-                <td>
-                    <nav>
-                        <ul>
-                            <li><a href="resume.html">Resume</a></li>
-                            <li><a href="projects.html">Projects</a></li>
-                            <li><a href="leadership.html">Leadership</a></li>
-                            <li><a href="passions.html">Passions</a></li>
-                        </ul>
-                    </nav>
-                </td>
-            </tr>
-        </table>
+
+    <header class="navbar">
+        <h1>ANNIE LIU</h1>
+        
+        <nav>
+            <!-- <label for="menu-toggle" class="hamburger">&#9776;</label> -->
+            
+            <ul class="desktop-bar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="leadership.html">Leadership</a></li>
+                <li><a href="passions.html">Passions</a></li>
+            </ul>
+
+            <!-- Hamburger Menu (Visible on Smaller Screens) -->
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <ul class="mobile-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="leadership.html">Leadership</a></li>
+                <li><a href="passions.html">Passions</a></li>
+            </ul>
+
+        </nav>
     </header>
+        
 
     <main>
-        <hr>
-        <h1>Hello!</h1>
 
-        <table>
-            <tr>
-                <!-- Profile Picture -->
-                <td>
-                    <img src="assets/profile.jpg" alt="Profile Picture" height="200">
-                </td>
-
-                <!-- Welcome Message -->
-                <td>
-                    <p>Hi, my name is <span class="highlight">Annie Liu</span>, and I'm a fourth-year computer science major at UC San Diego, interested in pursuing a career in software engineering. Along with a solid foundation in a variety of programming languages and software tools, I am a natural leader with experience mentoring and managing teams. With exceptional communication skills, strong organization, and resourcefulness, I bring a quick learning ability to contribute effectively to innovative projects.<br><br>
+        <div class="hero-section">
+            <div class="profile-card">
+                <img src="assets/profile.jpg" alt="Annie Liu" >
+                <h1>Annie Liu</h1>
+                <p>Computer Science</p>
+                <div class="profile-card-footer">
+                    <a href="mailto:anniejiaqiliu@gmail.com" class="icon-circle">
+                        <img src="assets/email.png" alt="Email">
+                    </a>
+                    <a href="https://linkedin.com/in/anniejiaqiliu" class="icon-circle">
+                        <img src="assets/linkedin.png" alt="LinkedIn">
+                    </a>
+                </div>
+            </div>
+    
+            <div class="about-section">
+                <h1>hello</h1>
+                <h2>
+                    Computer Science at <br>
+                    University of California, San Diego
+                </h2>
+                <div class="buttons">
+                    <a href="resume.html" class="btn btn-primary">Resume</a>
+                    <a href="projects.html" class="btn btn-secondary">Projects</a>
+                </div>
+                <p>
+                    Hi, my name is Annie Liu, and I'm a fourth-year computer science major at UC San Diego, interested in pursuing a career in software engineering. Along with a solid foundation in a variety of programming languages and software tools, I am a natural leader with experience mentoring and managing teams. With exceptional communication skills, strong organization, and resourcefulness, I bring a quick learning ability to contribute effectively to innovative projects.<br><br>
                     During my free time, I love staying fit through basketball, weightlifting, and running around San Diego. I believe exercise builds both physical and mental endurance, fostering the grit needed to face life’s challenges. One of my favorite ways to experience different cultures is through food, and I enjoy sharing the unique eats I discover on my food Instagram and Beli.
-
-                    </p>
-                </td>
-            </tr>
-        </table>
+                </p>
+            </div>
+        </div>
         
     </main>
 
@@ -55,16 +85,6 @@
         <div>
             <br>
             <p>This site was made by Annie Liu for CSE 134B.</p>
-        </div>
-
-        <!-- Social Media Icons -->
-        <div>
-            <a href="mailto:anniejiaqiliu@gmail.com" target="_blank" title="Email anniejiaqiliu@gmail.com">
-                <img src="assets/email.png" width="20" alt="Email">
-            </a>
-            <a href="https://linkedin.com/in/anniejiaqiliu" target="_blank" title="Stay posted with me on LinkedIn">
-                <img src="assets/linkedin.png" width="20" alt="LinkedIn">
-            </a>
         </div>
     </footer>
 

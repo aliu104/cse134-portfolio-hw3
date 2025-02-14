@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Stalemate&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap');
+
+@font-face {
+    font-family: 'Adelia';
+    src: url('../fonts/adelia.woff2') format('woff2'), /* Preferred */
+         url('../fonts/adelia.woff') format('woff'); /* Fallback */
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --font-primary: 'Raleway', sans-serif;
+    --font-heading: 'Adelia';
+    --secondary-color: #fdf1d9;
+    --hover-color-dark: #B086BF;
+    --hover-color-light: #e0c7ea;
+}
+
+* {
+    box-sizing: border-box;
+}

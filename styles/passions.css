@@ -1,0 +1,167 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+/* Image covers 1/3 of screen height */
+.image-container {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 55vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../assets/basketball-cover.jpg') no-repeat center center/cover;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 50% 100%, 0% 85%);
+}
+
+.page-header {
+    font-family: var(--font-heading);
+    display: flex;
+    font-size: 3rem;
+    position: absolute;
+    width: 100%;
+    padding: 20px;
+    color: white;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+}
+
+/* Hero Section - Parent Flexbox */
+.hero-section {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center ;
+    gap: 5%;
+    padding: 4rem 2rem 2rem 2rem;
+    width: 100%;
+    position: relative;
+}
+
+.passion-block {
+    background: var(--secondary-color);
+    padding: 2rem;
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.passion-block h2 {
+    font-family: var(--font-heading);
+    text-transform: lowercase;
+}
+
+.passion-block h3 {
+    /* font-family: var(--font-heading); */
+    font-style: italic;
+    /* text-align: center; */
+}
+
+.image-wrap {
+    float: left; /* Moves the image to the left */
+    margin: 0 20px 10px 0; /* Adds spacing around image */
+    height: auto;
+    width: 300px; /* Adjust size */
+    border-radius: 10px; /* Optional rounded corners */
+}
+
+.hero-quote {
+    font-size: 1.5rem;
+    font-style: italic;
+    color: black;
+    text-align: center;
+    max-width: 80%;
+    position: relative;
+    margin-top: 20px;
+    line-height: 35px;
+}
+
+.quote-mark {
+    font-size: 2rem;
+    font-weight: bold;
+    color: black;
+}
+
+.quote-speaker {
+    display: inline;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 10px;
+    color: black; /* Softer white */
+}
+
+
+.basketball-stats {
+    width: 100%;
+    max-width: 700px;
+    border-collapse: collapse;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    text-align: center;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.basketball-stats caption {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px;
+    color: #333;
+    background: var(--hover-color-light);
+}
+
+.basketball-stats th, .basketball-stats td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.basketball-stats tbody tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+.basketball-stats tbody tr:hover {
+    background: var(--hover-color-light);
+    transition: 0.3s ease-in-out;
+}
+
+/* Disable hover for the first and last row in <tbody> */
+.basketball-stats tbody tr:first-child:hover {
+    background: transparent;
+}
+
+.basketball-stats tbody tr:last-child:hover {
+    background: #f9f9f9;
+}
+
+.basketball-stats tfoot {
+    background: #222;
+    color: white;
+    font-weight: bold;
+}
+
+.basketball-stats tfoot td {
+    padding: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .basketball-stats {
+        font-size: 0.9rem;
+    }
+
+    .basketball-stats th, .basketball-stats td {
+        padding: 10px;
+    }
+}
+
+.food-socials {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+}

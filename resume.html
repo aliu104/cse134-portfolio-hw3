@@ -13,9 +13,7 @@
     <header class="navbar">
         <h1>ANNIE LIU</h1>
         
-        <nav>
-            <!-- <label for="menu-toggle" class="hamburger">&#9776;</label> -->
-            
+        <nav>            
             <ul class="desktop-bar">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="resume.html">Resume</a></li>
@@ -40,99 +38,97 @@
     </header>
 
     <main>
-        <h1 class="page-header">Resume</h1>
+        <h1 class="page-title">Resume</h1>
 
-        <hr>
+        <!-- Experience section -->
+        <section class="section-block">
+            <section class="experience-title-block">
+                <h2 style="width:fit-content;">Experience</h2>
 
-        <!-- Resume button -->
-        <a href="assets/Liu_Annie_Resume_grad.pdf" target="_blank" >
-            Resume as PDF
-        </a>
-
-        <!-- Education section -->
-        <section>
-            <h2>Education</h2>
+                <!-- Resume button -->
+                <a href="assets/Liu_Annie_Resume_grad.pdf" target="_blank" class="resume-button">
+                    VIEW RESUME
+                </a>
+            </section>
     
-            <ol>
-                <li>
-                    <section>
-                        <h3><abbr title="University of California">UC</abbr> San Diego</h3>
-                        <address>9500 Gilman Drive, La Jolla, CA 92093</address>
-                        <p>
-                            September 2021 - June 2025<br>
-                            <abbr title="Bachelor of Science">B.S.</abbr> Computer Science<br>
-                            GPA: 3.97
-                        </p>
-                    </section>
-                </li>
-                <li>
-                    <section>
-                        <h3>Santa Clara High School</h3>
-                        <address>3000 Benton Street, Santa Clara, CA 95051</address>
-                        <p>August 2017 - June 2021</p>
-                    </section>
-                </li>
-            </ol>
-        </section>
-                    
-        <!-- Coursework section -->
-        <section>
-            <h2>Coursework</h2>
-            <p>
-                Linear Algebra, Probability, Statistics, Data Structures, Algorithms, Machine Learning, Operating Systems, Recommender Systems & Web Mining, Database Systems, Parallel Computing, Natural Language Processing, Computer Security
-            </p>
-        </section>
-                    
-        <!-- Skills section -->
-        <section>
-            <h2>Skills</h2>
-            <dl>
-                <dt><strong>Languages</strong></dt>
-                <dd>Java, Python, C, C++, SQL, HTML, TypeScript, Bash, LaTeX</dd>
+            <section class="experience-block">
+                <img src="assets/bloomberg.png" alt="Bloomberg Logo">
 
-                <dt><strong>Software Tools</strong></dt>
-                <dd>Linux/Ubuntu, Git/Gitlab/GitHub/Github Actions CI/CD, GDB, Vim, Android Studio, Jupyter Notebook, JUnit</dd>
-            </dl>
+                <section class="experience-info">
+                    <h3>Software Engineer Intern @ Bloomberg</h3>
+                    <p><em>Summer 2024</em></p>
+                    <p>Designed, implemented, and tested a web application via C++ and TypeScript to perform mass updates directly thru the Bloomberg Terminal without engineering involvement. Developed web services, a SQL-based database schema, and an intuitive front-end interface.</p>
+                </section>
+            </section>
+
+            <section class="experience-block">
+                <img src="assets/splunk.png" alt="Splunk Logo">
+
+                <section class="experience-info">
+                    <h3>Software Engineer Intern @ Splunk</h3>
+                    <p><em>Summer 2023</em></p>
+                    <p>Streamlined Splunk’s testing process by automating steps to enter debug sessions and providing rapid access to diagnostic test tools via tmux, bash, and Python. Enhanced developer experience by providing a centralized, intuitive resource to navigate and initiate debug sessions effectively.</p>
+                </section>
+            </section>
         </section>
-                    
-        <!-- Organizations section -->
-        <section>
-            <h2>Organizations</h2>
-            <ul>
-                <li>Eta Kappa Nu (HKN)</li>
-                <li>Women in Computing</li>
-                <li>Scholars Society</li>
-                <li>Girls Who Code</li>
-                <li>Rewriting the Code</li>
-            </ul>
+                   
+        <section class="section-block">
+            <h2>Leadership</h2>
+
+            <section class="leadership-hero-block">
+                <!-- Tutor section -->
+                <section class="leadership-block">
+                    <h3>CSE Tutor</h3>
+                    <p><em>Spring 2023 - Present</em></p>
+                    <img src="assets/tutor.jpg" alt="2023 CSE Tutor Potluck">
+                    <p>I have been a tutor for <b>CSE 12 Basic Data Structures</b>, one of the most foundational CS courses at UC San Diego, for approaching three years. As a tutor, I have supported and guided <i>nearly 2500 students</i> through fostering good coding practices like clean code, debugging skills, and visualizing concepts, helping students build a strong base for their future coursework. Witnessing their progress and receiving positive feedback confirmed that my <em>individualized teaching approach</em> and patience made a meaningful impact.</p>
+                </section>
+
+                <!-- HKN section -->
+                <section class="leadership-block">
+                    <h3>Eta Kappa Nu (IEEE-HKN)</h3>
+                    <p><em>Fall 2021 - Present</em></p>
+                    <img src="assets/hkn.jpeg" alt="2022 HKN Student Leadership Conference">
+                    <p>Being part of HKN has defined my UC San Diego experience—I’ve made my closest friends, countless memories, and a real impact on the engineering community. As VP Events and President, I led the post-pandemic transition back to in-person by restoring key events like career fairs and hackathons while rebuilding industry and alumni connections. I also prioritized mentorship and inclusivity within our org, regularly hosting coffee chats and launching a diversity initiative to foster collaboration and improve accessibility.</p>
+                </section>
+            </section>
+            
         </section>
 
-        <!-- Tutor section -->
-        <section>
-            <h2>CSE Tutor</h2>
-            <p>I have been a tutor for <b>CSE 12 Basic Data Structures</b>, one of the most foundational CS courses at UC San Diego, for approaching three years. As a tutor, I have supported and guided <i>nearly 2500 students</i> through fostering good coding practices like clean code, debugging skills, and visualizing concepts, helping students build a strong base for their future coursework. Witnessing their progress and receiving positive feedback confirmed that my <em>individualized teaching approach</em> and patience made a meaningful impact.</p>
+        <section class="section-block">
+            <h2>Education</h2>
+
+            <section class="education-block">
+                <h3>University of California, San Diego</h3>
+                <p><em>September 2021 - June 2025</em></p>
+                <p>
+                    <abbr title="Bachelor of Science">B.S.</abbr> Computer Science, Minor in Mathematics<br>
+                    GPA: 3.97
+                </p>
+
+                <hr>
+                
+                <h3>Coursework</h3>
+                <p>
+                    Linear Algebra, Probability, Statistics, Data Structures, Algorithms, Machine Learning, Operating Systems, Recommender Systems & Web Mining, Database Systems, Parallel Computing, Natural Language Processing, Computer Security
+                </p>
+
+                <hr>
+                            
+                <h3>Skills</h3>
+                <dl style="padding: 0; margin: 0">
+                    <dt><strong>Languages</strong></dt>
+                    <dd>Java, Python, C, C++, SQL, HTML, TypeScript, Bash, LaTeX</dd>
+
+                    <dt><strong>Software Tools</strong></dt>
+                    <dd>Linux/Ubuntu, Git/Gitlab/GitHub, Github Actions CI/CD, GDB, Vim, Android Studio, Jupyter Notebook, JUnit</dd>
+                </dl>
+            </section>
         </section>
 
-        <!-- HKN section -->
-        <section>
-            <h2>Eta Kappa Nu (IEEE-HKN)</h2>
-            <ul>
-                <li>
-                    <section>
-                        <h3>President</h3>
-                        <p>2023-2024</p>
-                        <p>Lead a <i>6-branch</i> organization with <i>50+ officers</i>, demonstrating effective <b>leadership</b> and <b>seamless coordination</b> among teams. Spearhead a new initiative to triple annual events, targeting an audience of <i>nearly 10,000 students</i>, while orchestrating a comprehensive <b>rebranding effort</b> that enhances the organization's image and presence.</p>
-                    </section>
-                </li>
-                <li>
-                    <section>
-                        <h3>Vice President of Events</h3>
-                        <p>2022-2023</p>
-                        <p>Managed and guided a team of 13 on <i>20+ events a quarter</i> to foster growth in UCSD’s engineering community. Oversaw all events to ensure and prioritize a <b>diverse</b> number of technical, professional, and social events that properly reflect HKN’s core values of <strong>scholarship, attitude, and character</strong>.</p>
-                    </section>
-                </li>
-            </ul>
-        </section>
+        <footer>
+            <p>This site was made by Annie Liu for CSE 134B.</p>
+         </footer>
         
     </main>
 

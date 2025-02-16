@@ -2,6 +2,18 @@ body {
     padding-top: 70px;
 }
 
+h1 {
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+.mobile-title {
+    display: none;
+    justify-content: center;
+    font-family: var(--font-heading);
+    font-size: 4rem;
+    padding-top: 20px;
+}
 
 /* Hero Section - Parent Flexbox */
 .hero-section {
@@ -38,11 +50,6 @@ body {
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 1rem;
-}
-
-.profile-card h1 {
-    font-size: 2rem;
-    margin: 1rem;
 }
 
 .profile-card p {
@@ -119,35 +126,11 @@ body {
     line-height: 25px;
 }
 
-.buttons {
-    display: flex;
-    gap: 1rem;
-}
 
-.btn-primary {
-    background-color: var(--hover-color-dark);
-    color: white;
-    padding: 0.5rem 1.5rem;
-    border-radius: 5px;
-    text-decoration: none;
-    border: 2px solid transparent; /* Keeps button size consistent */
-}
-
-.btn-primary:hover {
-    background: white;
-    color: black;
-    border: 2px solid var(--hover-color-dark);
-}
-
-.btn-secondary {
-    border: 2px solid black;
-    color: black;
-    padding: 0.5rem 1.5rem;
-    border-radius: 5px;
-    text-decoration: none;
-}
-
-@media (max-width: 768px) {
+@media (max-width: 820px) {
+    .mobile-title {
+        display: flex;
+    }
     .hero-section {
         flex-direction: column;
         align-items: center; /* Centers everything */

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
-    <link rel="icon" href="assets/butterfly.png" type="image/png">
+    <link rel="icon" href="assets/butterfly.svg" type="image/svg">
     <link rel="stylesheet" href="styles/globals.css">
     <link rel="stylesheet" href="styles/navbar.css">
     <link rel="stylesheet" href="styles/resume.css">
@@ -52,7 +52,11 @@
             </section>
     
             <section class="experience-block">
-                <img src="assets/bloomberg.png" alt="Bloomberg Logo">
+                <picture class="experience-block-img">
+                    <source srcset="assets/bloomberg_small.webp" media="(max-width: 820px)">
+                    <source srcset="assets/bloomberg_big.webp" media="(max-width: 2000px)">
+                    <img src="assets/bloomberg.png" alt="Bloomberg Logo">
+                </picture>
 
                 <section class="experience-info">
                     <h3>Software Engineer Intern @ Bloomberg</h3>
@@ -62,7 +66,11 @@
             </section>
 
             <section class="experience-block">
-                <img src="assets/splunk.png" alt="Splunk Logo">
+                <picture class="experience-block-img">
+                    <source srcset="assets/splunk_small.webp" media="(max-width: 820px)">
+                    <source srcset="assets/splunk_big.webp" media="(max-width: 2000px)">
+                    <img src="assets/splunk.png" alt="Splunk Logo">
+                </picture>
 
                 <section class="experience-info">
                     <h3>Software Engineer Intern @ Splunk</h3>
@@ -92,9 +100,9 @@
                     <p>Being part of HKN has defined my UC San Diego experience—I’ve made my closest friends, countless memories, and a real impact on the engineering community. As VP Events and President, I led the post-pandemic transition back to in-person by restoring key events like career fairs and hackathons while rebuilding industry and alumni connections. I also prioritized mentorship and inclusivity within our org, regularly hosting coffee chats and launching a diversity initiative to foster collaboration and improve accessibility.</p>
                 </section>
             </section>
-            
         </section>
 
+        <!-- Education section -->
         <section class="section-block">
             <h2>Education</h2>
 

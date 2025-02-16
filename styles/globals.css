@@ -3,16 +3,16 @@
 
 @font-face {
     font-family: 'Adelia';
-    src: url('../fonts/adelia.woff2') format('woff2'), /* Preferred */
-         url('../fonts/adelia.woff') format('woff'); /* Fallback */
+    src: url('../fonts/adelia.woff2') format('woff2'),
+         url('../fonts/adelia.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'Raleway';
-    src: url('../fonts/raleway.woff2') format('woff2'), /* Preferred */
-         url('../fonts/raleway.woff') format('woff'); /* Fallback */
+    src: url('../fonts/raleway.woff2') format('woff2'), 
+         url('../fonts/raleway.woff') format('woff'); 
     font-weight: normal;
     font-style: normal;
 }
@@ -20,16 +20,15 @@
 :root {
     --font-primary: 'Raleway';
     --font-heading: 'Adelia';
-    --secondary-color: #fdf1d9;
-    --hover-color-dark: #B086BF;
-    --hover-color-light: #e0c7ea;
+    --secondary-color: color(display-p3 0.992 0.945 0.851); 
+    --hover-color-dark: color(display-p3 0.69 0.53 0.75); 
+    --hover-color-light: color(display-p3 0.88 0.78 0.92); 
 }
+
 
 * {
     box-sizing: border-box;
     font-family: var(--font-primary);
-    /* padding: 0;
-    margin: 0; */
 }
 
 .page-header {
